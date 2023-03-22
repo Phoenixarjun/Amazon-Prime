@@ -1,0 +1,415 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+}
+body{
+    width: 100%;
+    height: auto;
+}
+.navbar-desktop{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #1B252F;
+    padding: 3vh 3vw ;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+.nav-left{
+    display: flex;
+    justify-content: space-between;
+    gap: 15%;
+}
+
+.logo{
+    width: 7vw;
+    height: auto;
+    object-fit: contain;
+} 
+.list-container{
+    display: flex;
+    justify-content: space-around;
+    gap: 10%;
+    list-style: none;
+}
+.list-container li a{
+    color: #ced6dc;
+    font-size: 1.1vw;
+    text-decoration: none;
+    
+}
+.nav-right{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+.languageBtn,.loginBtn{
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    color: #ced6dc;
+    font-weight: 600;
+}
+.languageBtn img{
+    object-fit: cover;
+    width: 30px;
+}
+.languageBtn i{
+    font-size:15px;
+    color: #8595a1;
+}
+.loginBtn .fa-user-o{
+    font-size:23px;
+    font-weight: 500;
+    color: #8595a1;
+    transition-duration: .4s;
+}
+.tryBtn{
+    font-size: 1.8rem;
+    padding: 8px 0 8px 0;
+    font-weight: 100;
+    width: 10vw;
+    background-color:#0f79af;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    transition-duration: .4s;
+}
+.tryBtn:hover{
+    background-color: #1399de;
+}
+.loginBtn .fa-user-o:hover{
+    color: white;
+}
+#searchIcon{
+    color: #8595a1;;
+    font-size: 23px;
+    transition-duration: .4s;
+}
+#searchIcon:hover{
+    color: white;
+}
+
+.dummy{
+    width: 100%;
+    min-height: 10vh;
+}
+
+/* -------------------------------------------navbat----------------------------------------- */
+#welcome-container{
+    background-image: linear-gradient( to right, #000 40%, transparent 58% ), url(https://m.media-amazon.com/images/G/31/AmazonVideo/2019/MLP.jpg);
+    background-position: right top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #000;
+}
+.welcome{
+    font-family: "Amazon Ember";
+    min-height: 70vh;
+    min-width: 320px;
+    margin-top: -8px;
+    display: flex;
+    align-items: center;
+}
+.welcome div{
+    margin-left: 5vw;
+    margin-bottom: 15vh;
+}
+.welcome h1{
+    font-size: 4.8rem;
+    color: white;
+    font-weight: lighter;
+}
+.welcome p{
+    color: white;
+    font-size: 2.3rem;
+    font-weight: 300;
+    margin-top: 20px;
+    display: inline-block;
+    width: 90%;
+
+}
+.welcome button{
+    font-size: 1.6rem;
+    padding: 8px 0 8px 0;
+    font-weight: 500;
+    width: 15vw;
+    background-color:#0f79af;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    transition-duration: .4s;
+    margin-top: 15px;
+    display: block;
+}
+.welcome button:hover{
+    background-color: #1399de;
+}
+
+/* ----------------------------------------------------rental-container-----------------------------------*/
+#rental-container{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #000;    
+    background-image:linear-gradient(to left, #000 40%, transparent 58%),url(https://m.media-amazon.com/images/G/31/AmazonVideo/2021/X-site/MLP/TVOD/TVOD_MLP_Left.jpg);
+    background-position: left top;
+      }
+
+.rental{
+    min-height: 70vh;
+    min-width: 320px;
+    margin-top: -8px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.rental div{
+    margin-left: 5vw;
+    margin-bottom: 15vh;
+    margin-right: 8vw;
+}
+.rental h1{
+    font-size: 4.1rem;
+    color: white;
+    font-weight: 400;
+}
+.rental p{
+    color: white;
+    font-size: 2.1rem;
+    font-weight: 300;
+    margin-top: 20px;
+    display: inline-block;
+    width: 90%;
+}
+.rental button{
+    font-size: 1.6rem;
+    padding: 15px 0 15px 0;
+    font-weight: 500;
+    width: 18vw;
+    background-color:#0f79af;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    transition-duration: .4s;
+    margin-top: 15px;
+    display: block;
+}
+.rental button:hover{
+    background-color: #1399de;
+}
+
+
+/* ----------------------------------channel------------------------------*/
+.channels{
+    display: flex;
+}
+.channels-left{
+    margin-left: 5vw;
+    margin-top: 30px;
+    flex: 1;
+}
+.channels-left h1{
+    font-size:4.6rem;
+    font-weight: 300;
+    color: #000;
+    display: inline-block;
+    width: 90%;
+}
+.channels-left p{
+    font-size: 2.1rem;
+    display: inline-block;
+    margin-top: 20px;
+    width: 90%;
+}
+.channel-right{
+    max-width: 700px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-items: flex-start;
+    margin-top: 50px;
+    margin-right: 50px;
+    float: right;
+    box-sizing: border-box;
+    transition: all .12s ease-in-out;
+}
+.channel-right img:hover{
+    
+}
+.card{
+    width:15vw;
+    height: 18vh;
+    scale: 1;
+    margin-bottom: 2px;
+}
+.card:hover{
+
+}
+
+/* --------------------------------------------paring----------------------------------------*/
+
+#paring-container{
+    background-image:linear-gradient(to left, #000 40%, transparent 58%),url(https://images-na.ssl-images-amazon.com/images/G/01/digital/video/Magellan_MLP/MLP_Template_Image_Left.jpg);
+    background-position: left top;
+
+}
+
+.paring{
+    min-height: 65vh;
+    min-width: 320px;
+    display: flex;
+     
+    align-items: center;
+}
+
+.paring div{
+    margin-left: 5vw;
+    margin-bottom: 5vh;
+    margin-right: 8vw;
+    /* float: right; */
+}
+.paring h1{
+    font-size: 3.8rem;
+    color: white;
+    font-weight: 400;
+}
+.paring p{
+    color: white;
+    font-size: 2.1rem;
+    font-weight: 300;
+    margin-top: 20px;
+    display: inline-block;
+    width: 47%;
+}
+.paring button{
+    font-size: 1.6rem;
+    padding: 15px 0 15px 0;
+    font-weight: 500;
+    width: 18vw;
+    background-color:#0f79af;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    transition-duration: .4s;
+    margin-top: 15px;
+    display: block;
+}
+.paring button:hover{
+    background-color: #1399de;
+}
+
+/* ------------------------------friendly-------------------------------- */
+
+#Friendly-container{
+    background-image:linear-gradient(to right, #000 40%, transparent 58%),url(https://m.media-amazon.com/images/G/01/digital/video/Magellan_MLP/IN-kids-30Jan._CB1517304519_.jpg);
+    background-position: right top;
+}
+.Friendly{
+    min-height: 70vh;
+    min-width: 320px;
+    margin-top: -8px;
+    display: flex;
+    align-items: center;
+}
+.Friendly div{
+    margin-left: 5vw;
+    margin-top: 8vh;
+    margin-bottom: 15vh;
+}
+.Friendly h1{
+    font-size: 4rem;
+    color: white;
+    font-weight: 500;
+}
+.Friendly p{
+    color: white;
+    font-size: 2.1rem;
+    font-weight: 300;
+    margin-top: 20px;
+    display: inline-block;
+    width: 42%;
+
+}
+.Friendly button{
+    font-size: 1.6rem;
+    padding: 15px 0 15px 0;
+    font-weight: 500;
+    width: 18vw;
+    background-color:#0f79af;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    transition-duration: .4s;
+    margin-top: 35px;
+    display: block;
+}
+.Friendly button:hover{
+    background-color: #1399de;
+}
+
+/* -------------------------footer-----------------------*/
+.footer{
+    background-color: #222222;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3vh 0 4vh 0;
+}
+.footer img{
+    object-fit: cover;
+    object-position: center;
+}
+.footer ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+.footer p{
+    color: #6f716d;
+}
+
+
+
+
+
+
+
+
+
+
+/* @media (max-width:1280px){
+    .channel-right{
+        max-width: 680px;
+    }
+    .card{
+        width: 16vw;
+        height: 16vh;
+    }
+}
+@media (max-width:1080px){
+    .channel-right{
+        max-width: 590px;
+    }
+    .card{
+        width: 18vw;
+        height: 18vh;
+    }
+}
+
+@media (max-width:1040px){
+    .channel-right{
+        max-width: 460px;
+    }
+    .card{
+        width: 20vw;
+        height: 20vh;
+    }
+} */

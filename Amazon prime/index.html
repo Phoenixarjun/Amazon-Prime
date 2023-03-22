@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Prime Clone</title>
+    <!-- ------------------------Style----------------------------->
+    <link rel="stylesheet" href="./style.css">
+    <!-- -----------------------------BootStrap-------------------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- -----------------------------------icons------------------------------------->
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap" rel="stylesheet">
+    <!-- ---------------------------font-------------------------------------->
+</head>
+<body>
+    
+    <nav class="navbar-desktop">
+        <div class="nav-left">
+            <img src="./primeLogo.png" class="logo" alt="logo">
+            <ul class="list-container">
+                <li> <a href="#">Home</a></li>
+                <li> <a href="#">Store</a></li>
+                <li> <a href="#">Channels</a></li>
+                <li ><a href="#" style="
+                    display: flex;
+                    gap: 8px;
+                    align-items: center;
+                    font-weight: bolder;
+                ">Categoties<i class="fa fa-caret-down" style="color: #8595a1;"></i></a></li>
+                <li> <a href="#">My<span style="margin-left: 5px;">Stuff</span></a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <button class="tryBtn">Try for free</button>
+            <i class="fa fa-search"  id="searchIcon"></i>
+            <button class="languageBtn"> <img src="./globe.png" alt="globe">EN <i class="fa fa-caret-down"></i> </button>
+            <button class="loginBtn"> <i class="fa fa-user-o"></i><i class="fa fa-caret-down"></i> </button>
+        </div>
+    </nav>
+
+
+    <div class="dummy"></div>
+    <div class="welcome" id="welcome-container">
+        <!-- <img src="./images/cover-1.jpg"  class="cover-1" alt="cover-1"> -->
+        <div>
+            <h1>Welcome to Prime Video</h1>
+            <p>Watch the latest movies, TV shows, and award-winning Amazon Originals</p>
+            <button>Sign in to join prime</button>
+        </div>
+    </div>
+
+
+
+    <div class="rental" id="rental-container">
+        <!-- <img src="./images/cover-1.jpg" id="cover-1" class="img-fluid" alt="cover-1"> -->
+        <div>
+            <h1>Movie rentals on Prime Video</h1>
+            <p>Early Access to new movies, before digital subscription</p>
+            <button>Rent now</button>
+        </div>
+    </div>
+
+
+    <div class="channels">
+        <div class="channels-left">
+            <h1>Your favorite channels all in one place</h1>
+            <p>With Prime Video Channels, find shows and movies from your favorite channels all in one place. Enjoy with an add-on subscription to Channels of your choice
+            </p>
+        </div>
+        <div class="channel-right">
+            <div>
+                <a href="https://www.primevideo.com/gp/video/offers?benefitId=lionsgateplayin" target="_blank"><img src="./cards/LionsgatePlay.jpg" alt="Lionsgate Play" class="card"></a>
+            </div>
+            <div>
+                <a href="https://www.primevideo.com/gp/video/offers?benefitId=discoveryplusin" target="_blank"><img src="./cards/Discovery.jpg" alt="discovery plus in" class="card"></a>
+            </div>
+            <div>
+                <a href="https://www.primevideo.com/gp/video/offers?benefitId=erosnowin" target="_blank"><img src="./cards/Erosnow.jpg" alt="Erosnow" class="card"></a>
+            </div>
+            <div>
+                <a href="https://www.primevideo.com/gp/video/offers?benefitId=manoramamaxin" target="_blank"><img src="./cards/MANORAMAMAX.jpg" alt="manoramamaxin" class="card"></a>
+            </div>
+            <div>
+                <a href="https://www.primevideo.com/gp/video/offers?benefitId=hoichoiin" target="_blank"><img src="./cards/hoichoi.jpg" alt="hoichoiin" class="card"></a>
+            </div>
+            <div>
+                <a href="https://www.primevideo.com/region/eu/ref=dv_web_force_root?contentId=vrottin&benefitId=vrottin&contentType=subscription" target="_blank"><img src="./cards/Vrott.png" alt="Vrott" class="card"></a>
+            </div>
+            <div>
+                <a href="https://www.primevideo.com/region/eu/storefront?contentType=subscription&contentId=amcplusin&benefitId=amcplusin" target="_blank"><img src="./cards/Amc.png" alt="Amc" class="card"></a>
+            </div>
+            <div>
+                <a href="https://www.primevideo.com/gp/video/offers?benefitId=docubayin" target="_blank"><img src="./cards/Docubay.jpg" alt="Docubay" class="card"></a>
+            </div>
+            <div>
+                <a href="https://www.primevideo.com/gp/video/offers?benefitId=mubiin" target="_blank"><img src="./cards/Mubi.jpg" alt="Mubi" class="card"></a>
+            </div>
+            <div>
+                <a href="https://www.primevideo.com/region/eu/ref=dv_web_force_root?contentId=iwonderin&benefitId=iwonderin&contentType=subscription" target="_blank"><img src="./cards/iWonder.png" alt="iWonder" class="card"></a>
+            </div>
+            <div>
+                <a href="https://www.primevideo.com/region/eu/ref=dv_web_force_root?contentId=stingrayin&benefitId=stingrayin&contentType=subscription" target="_blank"><img src="./cards/Stingray.png" alt="Stingray" class="card"></a>
+            </div>
+            <div>
+                <a href="https://www.primevideo.com/ref=atv_hm_hom_5_c_byZI5Y_HSd40e1d_16_10?contentId=shortstvin&benefitId=shortstvin&contentType=subscription" target="_blank"><img src="./cards/ShortsTV.jpg" alt="ShortsTV" class="card"></a>
+            </div>
+        </div>
+    </div>
+    
+
+
+    <div class="paring" id="paring-container">
+        <!-- <img src="./images/cover-1.jpg" id="cover-1" class="img-fluid" alt="cover-1"> -->
+        <div id="paring-info">
+            <h1>Even better with Fire TV Stick</h1>
+            <p>The biggest movies and TV shows are always better on a big screen. Simply plug in your Amazon Fire TV Stick and stream on any HDTV. Press the voice button on the remote and say the name of the title you want to watch to find it in seconds.</p>
+            <button>Get Started</button>
+        </div>
+    </div>
+
+
+
+    <div class="Friendly" id="Friendly-container">
+        <!-- <img src="./images/cover-1.jpg"  class="cover-1" alt="cover-1"> -->
+        <div>
+            <h1>Family Friendly</h1>
+            <p>With easy to use Parental Controls and a dedicated kids page, enjoy secure, ad-free kids entertainment. Kids can enjoy popular TV shows like Peppa Pig, Powerpuff Girls, and Chhota Bheem.</p>
+            <button>Get started</button>
+        </div>
+    </div>
+
+
+
+    <div class="footer">
+        <img src="./footerLogo.png" alt="footerLogo">
+        <ul>
+            <li> <a href="https://www.primevideo.com/help/ref=dvm_MLP_EU_privacy?nodeId=202064890">Terms and Privacy Notice</a></li>
+            <li> <a href="https://www.amazon.in/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Feu.primevideo.com%2Fauth%2Freturn%2Fref%3Dav_auth_ap%3F_t%3DsgxvfHi-dk4KE6LQUz8Xcfmdp7jIzz3Oyb8y2LV41qQIGAAAAAQAAAABkGysEcmF3AAAAAPgWC9WfHH8iB-olH_E9xQ%26location%3D%2Fhelp%2Fcontact-us%3Fref_%253Datv_auth_red_aft&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&accountStatusPolicy=P1&openid.assoc_handle=amzn_prime_video_sso_in&openid.mode=checkid_setup&siteState=261-4272852-2934061&language=en_US&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0">Send us feedback</a></li>
+            <li> <a href="https://www.primevideo.com/help/ref=dvm_MLP_EU_help">Help</a></li>
+        </ul>
+        <p>© 1996-2023, Amazon.com, Inc. or its affiliates</p>
+    </div>
+<!-- ----------------------------appScript---------------------------->
+<script src="./app.js"></script>
+<!-- -----------------------------BootStrap---------------------------->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
