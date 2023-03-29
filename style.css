@@ -772,14 +772,14 @@ body{
         padding: 2vh 3vw;
      }
     #browse-hidden-list-catagories{
-        padding: 1.5vh 0 -3vh;
+        padding: 1.5vh -15px;
         font-size:2.3vw;
         font-weight: 600;
         border-bottom: 1px solid #2d3f4d;
     }
     #catagories-mobile-hidden{
-        margin: 0;
-        margin-bottom: 1.3vh;
+        margin-left: 0;
+        margin-bottom: 0.6vh;
     }
     .browse-hidden-list a{
         color: #b6babf;
