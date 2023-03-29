@@ -194,7 +194,7 @@ body{
       }
 .rental-mobile{
     background-image: linear-gradient(to top, #000 0%, transparent 20%), url(https://m.media-amazon.com/images/G/31/AmazonVideo/2021/X-site/MLP/TVOD/TVOD_MLP_Left._SX1440_CR0,0,865,675_QL80_AC_FP_.jpg);   
-    background-position: left top;
+    background-position: center;
     background-size:cover ;
     background-repeat: no-repeat;
     background-color: #000;
@@ -310,6 +310,7 @@ body{
 .pairing-mobile{
     background-image: linear-gradient(to top, #000 0%, transparent 20%), url(https://images-na.ssl-images-amazon.com/images/G/01/digital/video/Magellan_MLP/MLP_Template_Image_Left._SX1440_CR0,0,865,675_QL80_AC_FP_.jpg);    background-position: right top;
     background-size:cover ;
+    background-position: center;
     background-repeat: no-repeat;
     background-color: #000;
     height: 0;
@@ -371,6 +372,7 @@ body{
 .Friendly-mobile{
     background-image: linear-gradient(to top, #000 0%, transparent 20%), url(https://m.media-amazon.com/images/G/01/digital/video/Magellan_MLP/IN-kids-30Jan._SX1440_CR575,0,865,675_QL80_AC_FP_.jpg);    background-size:cover ;
     background-repeat: no-repeat;
+    background-position: center;
     background-color: #000;
     height: 0;
 }
@@ -853,6 +855,9 @@ body{
     #welcome-container,#rental-container,#pairing-container,#Friendly-container{
         background-image: none;
         margin-top: 0;
+    }
+    .welcome-mobile{
+        background-position: center;
     }
     .welcome,.rental{
         display: flex;
